@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUPIT</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="navbar-custom">
+    <nav class="nav-left">
+      <ul>
+        <li><a href="prijava.html"><i class="fas fa-user"></i>Prijavi se</a></li>
+        <li><a href="index.html"><i class="fas fa-home"></i>Početna</a></li>
+        <li><a href="o-nama.html"><i class="fas fa-info-circle"></i>O nama</a></li>
+        <li><a href="novosti.html"><i class="fas fa-newspaper"></i>Novosti</a></li>
+        <li>
+            <a href="#" data-toggle="modal" data-target="#kontaktModal">
+              <i class="fas fa-envelope"></i> Kontakt
+            </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="novosti-jedan-header">
+    <h1>Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti.</h1>
+  </div>
+
+
+  <section class="novosti-page-title">
+    <h1>WorldSkills natjecanje - Kazen 2019.</h1>
+    <hr class="novosti-divider">
+  </section>
+
+
+    <section class="content-section">
+      <div>
+        <p class="novosti-tekst">Nakon godinu dana priprema za natjecanje WorldSkills
+        Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+        cijelog svijeta, trud se itekako isplatio. Josip,
+        student 3. godine preddiplomskog studija sistemskog
+        inženjerstva osvojio je 12. mjesto u vještini IT
+        Networks and System Administration te osvojio medalju
+        izvrsnosti! Čestitke Josipu ali i njegovim/našim
+        mentorima koji su ga pripremali za ovo natjecanje –
+        voditelju studija sistemskog inženjerstva Silviju
+        Papiću, voditelju katedre za operacijske sustave –
+        Vedranu Dakiću i asistentu na studiju sistemskog
+        inženjerstva – Jasminu Redžepagiću. Čestitke i našem
+        studentu 3.godine preddiplomskog studija programskog
+        inženjerstva Josipu Horvatu i mentoru voditelju katedre
+        za programsko inženjerstvo - Goranu Đambiću na osvojenom
+        16.mjestu u vještini IT Software Solutions for Business.</p>
+      </div>
+      
+      
+    </section>
+
+    <section class="simple-gallery">
+  <div class="gallery-row">
+    <a href="../assets/images/novost1.jpg" data-lightbox="moje-slike">
+      <img src="../assets/images/novost1.jpg" alt="Slika 1">
+    </a>
+    <a href="../assets/images/galerija2.jpg" data-lightbox="moje-slike">
+      <img src="../assets/images/galerija2.jpg" alt="Slika 2">
+    </a>
+  </div>
+
+  <div class="video-wrapper">
+    <video controls>
+      <source src="../assets/videos/worldskills.mp4" type="video/mp4">
+      Vaš preglednik ne podržava video.
+    </video>
+  </div>
+</section>
+
+  
+
+  <footer class="zaiskri-footer">
+    <h1>BUDI IZVRSTAN U ONOM ŠTO VOLIŠ</h1>
+    <h1 id="narancasti-zaiskri">ZAISKRI</h1>
+  </footer>
+
+<!-- Kontakt forma modal -->
+<div class="modal fade" id="kontaktModal" tabindex="-1" role="dialog" aria-labelledby="kontaktModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <form action="https://www.fulek.com/mvc/supit/project-contact-form" method="post" class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="kontaktModalLabel">
+          <i class="fas fa-envelope"></i> Kontaktirajte nas
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Zatvori">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="text" name="FullName" class="form-control mb-2" placeholder="Puno ime" required />
+        <input type="email" name="Email" class="form-control mb-2" placeholder="E-mail" required />
+        <select name="Importance" class="form-control mb-2" required>
+          <option value="Niska">Niska</option>
+          <option value="Srednja">Srednja</option>
+          <option value="Visoka" selected>Visoka</option>
+        </select>
+        <textarea name="Message" class="form-control mb-2" rows="4" placeholder="Poruka" required></textarea>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="ReceiveNewsletter" value="true" id="newsletter">
+          <label class="form-check-label" for="newsletter">Želim primati obavijesti</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Pošalji</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Odustani</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/auth.js"></script>
+
+</body>
+</html>

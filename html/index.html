@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Nav bar -->
+    <header class="navbar-custom">
+
+      <div class="hamburger" id="hamburger-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+
+    <nav class="nav-left">
+      <ul>
+        <li><a href="prijava.html"><i class="fas fa-user"></i>Prijavi se</a></li>
+        <li><a href="index.html"><i class="fas fa-home"></i>Početna</a></li>
+        <li><a href="o-nama.html"><i class="fas fa-info-circle"></i>O nama</a></li>
+        <li><a href="#"><i class="fas fa-newspaper"></i>Novosti</a></li>
+        <li>
+            <a href="#" data-toggle="modal" data-target="#kontaktModal">
+              <i class="fas fa-envelope"></i> Kontakt
+            </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Background video -->
+     <section class="hero">
+        <video autoplay muted loop id="bg-video">
+            <source src="../assets/videos/typingOnlaptop.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="overlay">
+            <h1 id="animated-text">Budi izvrstan u onom što voliš</h1>
+        </div>
+     </section>
+
+
+<!-- Kontakt forma modal -->
+<div class="modal fade" id="kontaktModal" tabindex="-1" role="dialog" aria-labelledby="kontaktModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <form action="https://www.fulek.com/mvc/supit/project-contact-form" method="post" class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="kontaktModalLabel">
+          <i class="fas fa-envelope"></i> Kontaktirajte nas
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Zatvori">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="text" name="FullName" class="form-control mb-2" placeholder="Puno ime" required />
+        <input type="email" name="Email" class="form-control mb-2" placeholder="E-mail" required />
+        <select name="Importance" class="form-control mb-2" required>
+          <option value="Niska">Niska</option>
+          <option value="Srednja">Srednja</option>
+          <option value="Visoka" selected>Visoka</option>
+        </select>
+        <textarea name="Message" class="form-control mb-2" rows="4" placeholder="Poruka" required></textarea>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="ReceiveNewsletter" value="true" id="newsletter">
+          <label class="form-check-label" for="newsletter">Želim primati obavijesti</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Pošalji</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Odustani</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>
