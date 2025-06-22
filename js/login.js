@@ -20,6 +20,10 @@ document.getElementById('login-form').addEventListener('submit', function (e) {
         return;
       }
 
+      // moran spremit token i email
+      localStorage.setItem("token", data.data.token);
+      localStorage.setItem("email", username);
+
       alert("Uspješna prijava!");
       localStorage.setItem("token", data.data.token); // token je u data.data.token
       window.location.href = "pocetna_sa_prijavon.html";
@@ -29,6 +33,3 @@ document.getElementById('login-form').addEventListener('submit', function (e) {
       alert("Došlo je do pogreške pri prijavi.");
     });
 });
-
-localStorage.setItem("token", data.data.token);
-localStorage.setItem("email", username);

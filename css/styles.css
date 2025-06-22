@@ -701,6 +701,44 @@ i {
 /* NASTAVNI PLAN */
 /*-----------------------------------------------------*/
 
+.table-responsive {
+  max-height: none; 
+}
+
+#subjects-table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#subjects-table thead,
+#subjects-table tfoot {
+  background-color: #f8f9fa;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#subjects-table tbody {
+  display: block;
+  max-height: 155px; 
+  overflow-y: auto;
+}
+
+#subjects-table thead tr,
+#subjects-table tfoot tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#subjects-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+
 .nastavni-plan-naslov {
     padding-top: 100px;
     text-align: center;
@@ -749,7 +787,7 @@ i {
 }
 
 /*-----------------------------------------------------*/
-/* HAMBURGER MENU - RESPONSIVE NAVIGATION */
+/* HAMBURGER MENU - RESPONSIVE NAVIGATION  ->   ne valja */
 /*-----------------------------------------------------*/
 
 /* Hamburger dugme */
