@@ -15,6 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
     nav.insertBefore(nastavni, nav.children[4] || null); // ubaci prije Kontakta
 
     // ovi dio di mi je button za odjavu + korisnik (nisan jos rjesija da bude mail od korisnika tu)
+    // rjesen mail od korisnika :)
     const odjava = document.createElement("li");
     odjava.innerHTML = `<a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Odjava (${email || "Korisnik"})</a>`;
     nav.appendChild(odjava);
