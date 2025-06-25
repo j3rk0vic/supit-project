@@ -1,4 +1,3 @@
-// JavaScript Typewriter Effect
 const text = "Budi izvrstan u onom što voliš.";
 const textElement = document.getElementById("animated-text");
 let index = 0;
@@ -11,12 +10,13 @@ function typeWriter() {
     }
 }
 
-// Clear initial content and start typing after page load
 window.onload = () => {
     textElement.textContent = "";
     typeWriter();
 };
 
+
+// ne valja!
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.getElementById("hamburger-btn");
   const nav = document.getElementById("main-nav");

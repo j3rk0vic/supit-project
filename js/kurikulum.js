@@ -120,6 +120,3 @@ fetch('https://www.fulek.com/data/api/supit/curriculum-list/hr', {
     }));
   })
   .catch(err => console.error("Greška kod dohvaćanja liste predmeta:", err));
-
-
-console.log(allSubjects);
